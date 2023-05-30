@@ -1,0 +1,47 @@
+1.
+nodejs 14.17.0
+npm init
+npm install --save-exact express@4.17.1
+.gitignore
+import express from 'express'
+const app = express();
+const port = process.env.PORT || 8080;
+
+app.listen(port, ()=>{
+console.log(`http://localhost:${port}`)})
+2.
+npm install --save-exact body-parser@1.19.0 nodemon@2.0.12 @babel/core@7.15.5 @babel/node@7.15.4 @babel/preset-env@7.15.6
+.babelrc {"presets":["@babel/preset-env"]}
+package.json "start" :"nodemon --exec babel-node src/server.js"
+3.
+.env PORT =5000
+npm install --save-exact dotenv@10.0.0
+require('dotenv').config();
+4.
+import path from 'path';
+let router = express.Router();
+
+const hamApi = (app) => {
+    router.get('/toan', (req, res) => {
+        res.send('tao la Toan')
+    })
+    return app.use('/', router);
+}
+export default hamApi;
+
+5.
+npm install --save-exact ejs@3.1.6
+const hamViewEngine = (app) => {
+
+    app.set("view engine", "ejs")
+    app.set("views", "./src/views")
+
+}
+
+export default hamViewEngine;
+ router.get('/index', (req, res) => {
+        res.render('index.ejs')
+    })
+    return app.use('/', router);
+
+
