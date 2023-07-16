@@ -1,0 +1,8 @@
+1. Tải folder lên với link
+-git init
+-git status
+-git add .
+-git commit -m "tn"
+-git remote add origin link https
+-git push origin master
+
