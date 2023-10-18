@@ -3,6 +3,6 @@
 -git status
 -git add .
 -git commit -m "tn"
--git remote add origin link https
+-git remote add origin link-https
 -git push origin master
 
