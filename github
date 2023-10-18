@@ -6,3 +6,6 @@
 -git remote add origin link-https
 -git push origin master
 
+2. Tải folder xuống
+-git clone
+
