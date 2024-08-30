@@ -9,3 +9,7 @@
 2. Tải folder xuống
 -git clone
 
+3. Xử lí ngoại lệ
+vd:  git pull origin master
+Cấu trúc: git pull origin tên-nhánh
+
