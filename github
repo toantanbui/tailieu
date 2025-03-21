@@ -12,4 +12,4 @@
 3. Xử lí ngoại lệ
 vd:  git pull origin master
 Cấu trúc: git pull origin tên-nhánh
-
+- Rồi thực hiện lại thao tác git init
